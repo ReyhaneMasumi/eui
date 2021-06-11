@@ -48,6 +48,9 @@ export const CodeSandboxLinkComponent = ({
 }) => {
   let cssFile;
   switch (context.theme) {
+    case 'fanava-light':
+      cssFile = '@elastic/eui/dist/eui_theme_fanava_light.css';
+      break;
     case 'amsterdam-light':
       cssFile = '@elastic/eui/dist/eui_theme_amsterdam_light.css';
       break;
